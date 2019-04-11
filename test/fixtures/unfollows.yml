@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  profile_image: MyString
+  profile_url: MyString
+  user: one
+  unfollow_time: 2019-04-11 11:51:08
+
+two:
+  name: MyString
+  profile_image: MyString
+  profile_url: MyString
+  user: two
+  unfollow_time: 2019-04-11 11:51:08
