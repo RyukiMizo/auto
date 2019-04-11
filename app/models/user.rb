@@ -2,6 +2,12 @@ class User < ApplicationRecord
   attr_accessor :remember_token, :activation_token, :reset_token
   before_save   :downcase_email
   before_create :create_activation_digest
+  
+  has_many :follows, dependent: destroy
+  has_many :unfollows, dependent: destroy
+  has_many :likes, dependent: destroy
+  has_many :comments, dependent: destroy
+  has_many :messages, dependent: destroy
 
 
   validates :name,  presence: true, length: { maximum:  50 }

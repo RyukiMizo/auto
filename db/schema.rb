@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190411115707) do
+ActiveRecord::Schema.define(version: 20190411230423) do
 
   create_table "comments", force: :cascade do |t|
     t.string "name"
@@ -31,6 +31,38 @@ ActiveRecord::Schema.define(version: 20190411115707) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_follows_on_user_id"
+  end
+
+  create_table "hashtag_comments", force: :cascade do |t|
+    t.string "content"
+    t.integer "comment_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["comment_id"], name: "index_hashtag_comments_on_comment_id"
+  end
+
+  create_table "hashtag_follows", force: :cascade do |t|
+    t.string "content"
+    t.integer "follow_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["follow_id"], name: "index_hashtag_follows_on_follow_id"
+  end
+
+  create_table "hashtag_likes", force: :cascade do |t|
+    t.string "content"
+    t.integer "like_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["like_id"], name: "index_hashtag_likes_on_like_id"
+  end
+
+  create_table "hashtag_messages", force: :cascade do |t|
+    t.string "content"
+    t.integer "message_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["message_id"], name: "index_hashtag_messages_on_message_id"
   end
 
   create_table "likes", force: :cascade do |t|
