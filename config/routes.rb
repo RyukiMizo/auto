@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get  '/contact', to: 'static_pages#contact'
   get  '/signup',  to: 'users#new'
   post '/signup',  to: 'users#create'
+  post '/follow', to: 'users#follow'
   
   get    '/login',   to: 'sessions#new'
   post   '/login',   to: 'sessions#create'

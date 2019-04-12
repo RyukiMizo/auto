@@ -48,7 +48,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     if @user.update_attributes(user_params)
       # Success
-      flash[:success] = "Profile updated"
+      flash[:success] = "アップデートしました！"
       redirect_to @user
     else
       # Failure
@@ -60,8 +60,13 @@ class UsersController < ApplicationController
   # DELETE /users/:id
   def destroy
     User.find(params[:id]).destroy
-    flash[:success] = "User deleted"
+    flash[:success] = "削除しました！"
     redirect_to users_url
+  end
+  
+  def follow
+    puts "a"
+    system("python /home/ec2-user/environment/aut/hashtag.py ひとり暮らしキッチン 2 5")
   end
 
   private
@@ -76,7 +81,7 @@ class UsersController < ApplicationController
     def logged_in_user
       unless logged_in?
         store_location
-        flash[:danger] = "Please log in."
+        flash[:danger] = "ログインしてください"
         redirect_to login_url
       end
     end
