@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_11_230423) do
+ActiveRecord::Schema.define(version: 2019_04_12_093341) do
 
   create_table "comments", force: :cascade do |t|
     t.string "name"
@@ -127,6 +127,8 @@ ActiveRecord::Schema.define(version: 2019_04_11_230423) do
     t.datetime "like_time"
     t.datetime "comment_timer"
     t.datetime "message_time"
+    t.string "instagram_email"
+    t.string "instagram_password"
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 

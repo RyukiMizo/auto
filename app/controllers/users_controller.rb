@@ -66,7 +66,7 @@ class UsersController < ApplicationController
   
   def follow
     puts "a"
-    system("python /home/ec2-user/environment/aut/hashtag.py ひとり暮らしキッチン 2 5")
+    system("python /home/ec2-user/environment/InstaPy/like.py")
   end
 
   private
