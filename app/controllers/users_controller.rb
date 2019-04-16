@@ -67,7 +67,7 @@ class UsersController < ApplicationController
   def follow
     name = params[:name]
     password = params[:password]
-    str = "python /home/ec2-user/environment/aut/InstaPy/like.py"+" "+name+" "+password
+    str = "python /app/InstaPy/like.py"+" "+name+" "+password
     system(str)
   end
 
