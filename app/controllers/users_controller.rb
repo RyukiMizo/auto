@@ -65,8 +65,10 @@ class UsersController < ApplicationController
   end
   
   def follow
-    puts "a"
-    system("python /home/ec2-user/environment/InstaPy/like.py")
+    name = params[:name]
+    password = params[:password]
+    str = "python /home/ec2-user/environment/aut/InstaPy/like.py"+" "+name+" "+password
+    system(str)
   end
 
   private
