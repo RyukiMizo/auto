@@ -1,3 +1,4 @@
+# coding: UTF-8
 """ Quickstart script for InstaPy usage """
 
 # imports
