@@ -11,7 +11,7 @@ args = sys.argv
 #ryumizii
 
 # set workspace folder at desired location (default is at your home folder)
-set_workspace(path=None)
+set_workspace(path='/app/log')
 
 # get an InstaPy session!
 session = InstaPy(username=args[1], password=args[2], multi_logs=True, headless_browser=True)
