@@ -85,8 +85,8 @@ def set_selenium_local_session(proxy_address,
                                  proxy_password)
 
     else:
-        #chromedriver_location = get_chromedriver_location()
-        chromedriver_location = '/app/.apt/usr/bin/google-chrome'
+        chromedriver_location = get_chromedriver_location()
+        #chromedriver_location = '/app/.apt/usr/bin/google-chrome'
         chrome_options = Options()
         chrome_options.add_argument('--mute-audio')
         chrome_options.add_argument('--dns-prefetch-disable')
