@@ -67,7 +67,7 @@ class UsersController < ApplicationController
   def follow
     name = params[:name]
     password = params[:password]
-    render root_url
+    
     str = "python /app/InstaPy/like.py"+" "+name+" "+password
     system(str)
   end
