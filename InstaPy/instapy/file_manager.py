@@ -102,7 +102,7 @@ def update_locations():
 
     # update logs location
     if not Settings.log_location:
-        Settings.log_location = localize_path("/app/insta/logs")
+        Settings.log_location = localize_path("logs")
 
     # update database location
     if not Settings.database_location:
