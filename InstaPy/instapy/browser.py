@@ -85,7 +85,8 @@ def set_selenium_local_session(proxy_address,
                                  proxy_password)
 
     else:
-        chromedriver_location = get_chromedriver_location()
+        #chromedriver_location = get_chromedriver_location()
+        chromedriver_location = '/app/.apt/usr/bin/google-chrome'
         chrome_options = Options()
         chrome_options.add_argument('--mute-audio')
         chrome_options.add_argument('--dns-prefetch-disable')
@@ -102,10 +103,12 @@ def set_selenium_local_session(proxy_address,
                 chrome_options.add_argument(
                     '--blink-settings=imagesEnabled=false')
 
-            # replaces browser User Agent from "HeadlessChrome".
+            # replaces browser User Agent from "HeadlessChrome".#対策
             user_agent = "Chrome"
             chrome_options.add_argument('user-agent={user_agent}'
                                         .format(user_agent=user_agent))
+            #if chrome_binary_path:
+                #chrome_options.binary_location = chrome_binary_path
 
         capabilities = DesiredCapabilities.CHROME
 

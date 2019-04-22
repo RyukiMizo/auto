@@ -14,7 +14,7 @@ args = sys.argv
 set_workspace(path=None)
 
 # get an InstaPy session!
-session = InstaPy(username=args[1], password=args[2], headless_browser=True)
+session = InstaPy(username=args[1], password=args[2], multi_logs=True, headless_browser=True)
 
 with smart_run(session):
     """ Activity flow """
