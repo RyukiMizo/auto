@@ -16,7 +16,7 @@ args = sys.argv
 # get an InstaPy session!
 session = InstaPy(username=args[1], password=args[2], multi_logs=True, headless_browser=True)
 
-with smart_run(session):
-    """ Activity flow """
+#with smart_run(session):
+    #""" Activity flow """
     # general settings
-    session.follow_by_tags(['handmade', 'ハンドメイド'], amount=10)
+session.follow_by_tags(['handmade', 'ハンドメイド'], amount=10)
