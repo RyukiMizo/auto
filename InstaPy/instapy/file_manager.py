@@ -106,7 +106,7 @@ def update_locations():
 
     # update database location
     if not Settings.database_location:
-        Settings.database_location = localize_path("app/insta/db", "instapy.db")
+        Settings.database_location = localize_path("db", "instapy.db")
 
     # update chromedriver location
     if not Settings.chromedriver_location:
