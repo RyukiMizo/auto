@@ -1,0 +1,15 @@
+INFO [2019-04-23 02:39:10] [akuseuihf]  Using built in instapy-chromedriver executable (version 2.46)
+INFO [2019-04-23 02:39:12] [akuseuihf]  Session started!
+INFO [2019-04-23 02:39:12] [akuseuihf]  Tag [1/2]
+INFO [2019-04-23 02:39:12] [akuseuihf]  --> b'handmade'
+INFO [2019-04-23 02:39:21] [akuseuihf]  desired amount: 4  |  top posts [disabled]: 9  |  possible posts: 158853010
+INFO [2019-04-23 02:39:27] [akuseuihf]  Follow# [1/4]
+INFO [2019-04-23 02:39:27] [akuseuihf]  https://www.instagram.com/p/BwlOMucF97Y/
+INFO [2019-04-23 02:39:30] [akuseuihf]  Image from: b'karolpf130'
+INFO [2019-04-23 02:39:30] [akuseuihf]  Link: b'https://www.instagram.com/p/BwlOMucF97Y/'
+INFO [2019-04-23 02:39:30] [akuseuihf]  Description: b'Touquinha pecorrucha e fofinha demais! #compredequemfaz #artesanato #handmade #feitocomocoracao #feitocomamor #feitoamao #crochet #recemnascido #acessorios #acessoriosparabebe'
+INFO [2019-04-23 02:39:30] [akuseuihf]  Location: b'Passo Fundo'
+WARNING [2019-04-23 02:39:44] [akuseuihf]  Phew! Last follow is not verified.	~'akuseuihf' might be temporarily blocked from following
+
+INFO [2019-04-23 02:42:51] [akuseuihf]  Follow# [2/4]
+INFO [2019-04-23 02:42:51] [akuseuihf]  https://www.instagram.com/p/BwlOMBDFbk7/

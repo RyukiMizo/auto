@@ -19,4 +19,4 @@ session = InstaPy(username=args[1], password=args[2], multi_logs=True, headless_
 #with smart_run(session):
     #""" Activity flow """
     # general settings
-session.follow_by_tags(['handmade', 'ハンドメイド'], amount=10)
+session.like_by_tags(['handmade', 'ハンドメイド'], amount=4)

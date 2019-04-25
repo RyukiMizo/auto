@@ -33,8 +33,10 @@ class Settings:
     """ Globally accessible settings throughout whole project """
 
     # locations
-    log_location = "/app/insta/logs"#localize_path("logs")
-    database_location = "/app/insta/db/instapy.db"#localize_path("db", "instapy.db")
+    #log_location = "/app/insta/logs"#localize_path("logs")
+    log_location = "/home/ec2-user/environment/aut/insta/logs"#localize_path("logs")
+    #database_location = "/app/insta/db/instapy.db"#localize_path("db", "instapy.db")
+    database_location = "/home/ec2-user/environment/aut/insta/db/instapy.db"#localize_path("db", "instapy.db")
     specific_chromedriver = "chromedriver_{}".format(OS_ENV)
     chromedriver_location = localize_path("assets", specific_chromedriver)
     if (not chromedriver_location
